@@ -12,6 +12,9 @@
 		9D5EA7D125A829D200407AC0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5EA7D025A829D200407AC0 /* Preview Assets.xcassets */; };
 		9D5EA7FD25A82EE600407AC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5EA7FC25A82EE600407AC0 /* AppDelegate.swift */; };
 		9D5EA80025A82F3900407AC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5EA7FF25A82F3900407AC0 /* Main.storyboard */; };
+		9D5EA80525A8325B00407AC0 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5EA80425A8325B00407AC0 /* Task.swift */; };
+		9D5EA80825A832C000407AC0 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5EA80725A832C000407AC0 /* TaskRepository.swift */; };
+		9D5EA80D25A8350B00407AC0 /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5EA80C25A8350B00407AC0 /* TaskRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		9D5EA7D325A829D200407AC0 /* Docca.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Docca.entitlements; sourceTree = "<group>"; };
 		9D5EA7FC25A82EE600407AC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D5EA7FF25A82F3900407AC0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9D5EA80425A8325B00407AC0 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		9D5EA80725A832C000407AC0 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		9D5EA80C25A8350B00407AC0 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,8 @@
 		9D5EA7C825A829C600407AC0 /* Docca */ = {
 			isa = PBXGroup;
 			children = (
+				9D5EA80B25A834E300407AC0 /* View */,
+				9D5EA80A25A834DF00407AC0 /* Model */,
 				9D5EA7FC25A82EE600407AC0 /* AppDelegate.swift */,
 				9D5EA7CB25A829C600407AC0 /* ContentView.swift */,
 				9D5EA7FF25A82F3900407AC0 /* Main.storyboard */,
@@ -72,6 +80,23 @@
 				9D5EA7D025A829D200407AC0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9D5EA80A25A834DF00407AC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D5EA80425A8325B00407AC0 /* Task.swift */,
+				9D5EA80725A832C000407AC0 /* TaskRepository.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D5EA80B25A834E300407AC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D5EA80C25A8350B00407AC0 /* TaskRow.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +169,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D5EA80D25A8350B00407AC0 /* TaskRow.swift in Sources */,
 				9D5EA7FD25A82EE600407AC0 /* AppDelegate.swift in Sources */,
+				9D5EA80525A8325B00407AC0 /* Task.swift in Sources */,
+				9D5EA80825A832C000407AC0 /* TaskRepository.swift in Sources */,
 				9D5EA7CC25A829C600407AC0 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
