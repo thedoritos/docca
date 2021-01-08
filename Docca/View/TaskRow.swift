@@ -22,9 +22,13 @@ struct TaskRow: View {
 struct TaskRow_Previews: PreviewProvider {
     static var previews: some View {
         let taskRepository = TaskRepository()
-        let task = taskRepository.select().first
 
-        return TaskRow(task: Task(title: task?.title ?? "NOT FOUND"))
-            .previewLayout(.fixed(width: 320, height: 48))
+        Group {
+            let tasks = taskRepository.select()
+            TaskRow(task: tasks[0])
+            TaskRow(task: tasks[1])
+            TaskRow(task: tasks[2])
+        }
+        .previewLayout(.fixed(width: 320, height: 48))
     }
 }
