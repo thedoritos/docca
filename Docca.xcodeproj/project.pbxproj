@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D5EA7CA25A829C600407AC0 /* DoccaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5EA7C925A829C600407AC0 /* DoccaApp.swift */; };
 		9D5EA7CC25A829C600407AC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5EA7CB25A829C600407AC0 /* ContentView.swift */; };
 		9D5EA7CE25A829D200407AC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5EA7CD25A829D200407AC0 /* Assets.xcassets */; };
 		9D5EA7D125A829D200407AC0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5EA7D025A829D200407AC0 /* Preview Assets.xcassets */; };
+		9D5EA7FD25A82EE600407AC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5EA7FC25A82EE600407AC0 /* AppDelegate.swift */; };
+		9D5EA80025A82F3900407AC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5EA7FF25A82F3900407AC0 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9D5EA7C625A829C600407AC0 /* Docca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Docca.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D5EA7C925A829C600407AC0 /* DoccaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoccaApp.swift; sourceTree = "<group>"; };
 		9D5EA7CB25A829C600407AC0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D5EA7CD25A829D200407AC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D5EA7D025A829D200407AC0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D5EA7D225A829D200407AC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D5EA7D325A829D200407AC0 /* Docca.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Docca.entitlements; sourceTree = "<group>"; };
+		9D5EA7FC25A82EE600407AC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D5EA7FF25A82F3900407AC0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +55,9 @@
 		9D5EA7C825A829C600407AC0 /* Docca */ = {
 			isa = PBXGroup;
 			children = (
-				9D5EA7C925A829C600407AC0 /* DoccaApp.swift */,
+				9D5EA7FC25A82EE600407AC0 /* AppDelegate.swift */,
 				9D5EA7CB25A829C600407AC0 /* ContentView.swift */,
+				9D5EA7FF25A82F3900407AC0 /* Main.storyboard */,
 				9D5EA7CD25A829D200407AC0 /* Assets.xcassets */,
 				9D5EA7D225A829D200407AC0 /* Info.plist */,
 				9D5EA7D325A829D200407AC0 /* Docca.entitlements */,
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D5EA80025A82F3900407AC0 /* Main.storyboard in Resources */,
 				9D5EA7D125A829D200407AC0 /* Preview Assets.xcassets in Resources */,
 				9D5EA7CE25A829D200407AC0 /* Assets.xcassets in Resources */,
 			);
@@ -140,8 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D5EA7FD25A82EE600407AC0 /* AppDelegate.swift in Sources */,
 				9D5EA7CC25A829C600407AC0 /* ContentView.swift in Sources */,
-				9D5EA7CA25A829C600407AC0 /* DoccaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +282,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kakeragames.Docca;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -300,7 +304,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kakeragames.Docca;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
