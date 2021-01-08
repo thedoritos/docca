@@ -10,13 +10,13 @@ import Foundation
 struct TaskRepository {
     func select() -> [Task] {
         return [
-            Task(title: "Daily Stand Up"),
-            Task(title: "Research image caching method"),
-            Task(title: "Fix Issue#8"),
-            Task(title: "☕️"),
-            Task(title: "Code Review PR#7"),
-            Task(title: "Mokumoku"),
-            Task(title: "Daily Wrap Up")
+            Task(id: 1, title: "Daily Stand Up"),
+            Task(id: 2, title: "Research image caching method"),
+            Task(id: 3, title: "Fix Issue#8"),
+            Task(id: 4, title: "☕️"),
+            Task(id: 5, title: "Code Review PR#7"),
+            Task(id: 6, title: "Mokumoku"),
+            Task(id: 7, title: "Daily Wrap Up")
         ]
     }
 }

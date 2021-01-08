@@ -6,7 +6,9 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct Task {
+struct Task: Identifiable {
+    var id: Int
     var title: String
 }
